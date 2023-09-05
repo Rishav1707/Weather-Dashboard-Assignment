@@ -104,6 +104,11 @@
     transform: translateY(-4px);
 }
 
+.pagination {
+    display: flex;
+    gap: 1rem;
+}
+
 .pagination button {
     padding: 0.1rem 0.4rem;
     font-size: 1rem;
