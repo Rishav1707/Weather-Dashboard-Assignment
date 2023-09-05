@@ -1,0 +1,141 @@
+.Card {
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.inner-Card {
+    width: 70%;
+    margin-top: 2rem;
+}
+
+.inner-Card-input {
+    display: flex;
+    justify-content: center;
+    gap: 1rem;
+    margin-bottom: 4rem;
+}
+
+.inner-Card-input input {
+    padding: 0.375rem 0.75rem;
+    font-size: 1rem;
+    font-weight: 400;
+    line-height: 1.5;
+    color: #000;
+    border: none;
+    border-radius: 0.375rem;
+}
+
+.inner-Card-input input:focus {
+    outline: none;
+    box-shadow: 0 0 4px 2px #758BFD;
+    transition: box-shadow 0.4s ease-in-out;
+}
+
+.inner-Card-input button {
+    padding: 0.5rem 1.5rem;
+    font-size: 1rem;
+    font-weight: 600;
+    line-height: 1.5;
+    color: #000;
+    background-color: transparent;
+    border: 1px solid #000;
+    border-radius: 2rem;
+    font-family: 'Noto Sans Indic Siyaq Numbers', sans-serif;
+    letter-spacing: 0.8px;
+    word-spacing: 3px;
+    cursor: pointer;
+    transition: all 0.3s ease-in-out;
+}
+
+.inner-Card-input button:hover {
+    transform: translateY(-4px);
+}
+
+.Card-details {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 3rem;
+}
+
+.inner-Card-details {
+    display: flex;
+    flex-direction: column;
+    align-items: start;
+    gap: 0.2rem;
+    padding: 30px 35px;
+    border: 1px solid #000;
+    background-color: #fff;
+    border-radius: 18px;
+}
+
+.inner-Card-details h2 {
+    font-size: 1.8rem;
+}
+
+.inner-Card-details p {
+    font-size: 14px;
+}
+
+.inner-Card-details h2,
+.inner-Card-details p {
+    letter-spacing: 0.8px;
+}
+
+.inner-Card-details button {
+    margin-top: 1rem;
+    padding: 0.4rem 0.8rem;
+    font-size: 0.75rem;
+    line-height: 1.5;
+    color: #758BFD;
+    background-color: transparent;
+    border: 2px solid #758BFD;
+    border-radius: 0.375rem;
+    font-family: 'Noto Sans Indic Siyaq Numbers', sans-serif;
+    letter-spacing: 0.8px;
+    word-spacing: 3px;
+    cursor: pointer;
+    transition: all 0.3s ease-in-out;
+}
+
+.inner-Card-details button:hover {
+    transform: translateY(-4px);
+}
+
+.pagination button {
+    padding: 0.1rem 0.4rem;
+    font-size: 1rem;
+    line-height: 1.5;
+    color: #758BFD;
+    background-color: #fff;
+    border: 2px solid #758BFD;
+    border-radius: 0.375rem;
+    font-family: 'Noto Sans Indic Siyaq Numbers', sans-serif;
+    cursor: pointer;
+}
+
+@media (max-width: 768px) {
+    .inner-Card {
+        width: 80%;
+    }
+
+    .inner-Card-input {
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .inner-Card-input input {
+        width: 100%;
+        line-height: 2;
+    }
+
+    .Card-details {
+        flex-direction: column;
+    }
+
+    .pagination {
+        margin-bottom: 2rem;
+    }
+}
