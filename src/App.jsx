@@ -1,5 +1,5 @@
 import "./App.css";
-import Header from "./components/header/header";
+import Header from "./components/header/Header";
 import Card from "./components/weather-card/Card";
 
 const App = () => {
