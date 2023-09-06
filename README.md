@@ -38,18 +38,23 @@ You are tasked with creating a weather dashboard using HTML, CSS, and ReactJS. T
           console.error('Error fetching weather data:', error);
         }
       };
-3. The temperature is not being displayed.
+     ```
+   
+2. The temperature is not being displayed.
    - We need to access the temperature property correctly in the city weather data. We should use `city.main?.temp` instead of `city.main.temp` to handle potential undefined values.
    - Here's the updated temperature display
      ```bash
      <p>Temperature: {city.main?.temp}</p>
-5. The delete functionality is not working.
+     ```
+     
+3. The delete functionality is not working.
    - The `deleteCity` function is not correctly filtering the cities. We need to compare the city names to remove the correct city. Also, we should use the `setCities` function with the filtered array to update the state.
    - Here's the updated `deletecity` function
      ```bash
      const deleteCity = (cityToDelete) => {
         setCities((prevCities) => prevCities.filter((city) => city.name !== cityToDelete.name));
       };
+     ```
 
 ## How I Implemented the Advanced Features
 
@@ -137,6 +142,7 @@ You are tasked with creating a weather dashboard using HTML, CSS, and ReactJS. T
       };
       
       export default Card;
+     ```
 
 2. Implement pagination to display only 3 cities per page.
    - Updated the `state` to keep track of the current page.
@@ -230,6 +236,7 @@ You are tasked with creating a weather dashboard using HTML, CSS, and ReactJS. T
       };
       
       export default Card;
+     ```
 
 3. Display a basic line graph showing temperature trends for the past 24 hours for a selected city.
    - Fetched historical weather data for the selected city, including temperature data for the past 24 hours.
